@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Survey</title>
+</head>
+<body>
+    <h1 class="title" id="title">Survey</h1>
+    <p id="description">Help us to improve the plataform</p>
+    <form id="survey-form">
+        <label id="name-label">Name</label><br>
+        <input type="text" id="name" required placeholder="name"><br>
+        <label id="email-label">Email</label><br>
+        <input type="email" id="email" required placeholder="email"><br>
+        <label id="number-label">Number</label><br>
+        <input type="number" id="number" min="0" max="8" required placeholder="number"><br>
+        <p>Você é:</p>
+        <select id="dropdown">
+            <option name="opcao">Estudante</option>
+            <option name="opcao">Professor</option>
+        </select><br>
+        <div>
+            <p>Seu gênero</p>
+            <input type="radio" value="fem" name="genero">
+            <label for="fem">Feminino</label><br>
+            <input type="radio" value="masc" name="genero">
+            <label for="masc">Masculino</label><br>
+            <input type="radio" value="nao" name="genero">
+            <label for="nao">Prefiro não informar</label>
+        </div>
+        <div>
+            <p>Sua idade</p>
+            <input type="radio" value="menor" name="idade">
+            <label for="menor">Menos de 18 anos</label><br>
+            <input type="radio" value="maior" name="idade">
+            <label for="maior">Maior de 18 anos</label><br>
+            <input type="radio" value="adulto" name="idade">
+            <label for="adulto">Mais de 30 anos</label><br>
+            <input type="radio" value="idoso" name="idade">
+            <label for="idoso">Mais de 60 anos</label>
+        </div>
+        <p>Classifique nosso serviço</p>
+        <input type="checkbox" value="excelente">
+        <label for="excelente">Excelente</label><br>
+        <input type="checkbox" value="bom">
+        <label for="bom">Bom</label><br>
+        <input type="checkbox" value="mediana">
+        <label for="mediano">Mediano</label><br>
+        <input type="checkbox" value="ruim">
+        <label for="ruim">Ruim</label><br>
+        <input type="checkbox" value="pessimo">
+        <label for="pessimo">Péssimo</label><br>
+        <input type="checkbox" value="sem">
+        <label for="sem">Não sei/Indiferente</label><br><br>
+        <label>Comentários:</label><br>
+        <textarea rows="10" cols="40"></textarea><br>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
